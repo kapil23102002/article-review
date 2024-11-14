@@ -11,40 +11,40 @@ function App() {
     <HelmetProvider>
       <div>
         <nav style={styles.nav}>
-          <Link style={styles.link} to="/Link--Preview-App">
+          <Link style={styles.link} to="/">
             Home
           </Link>
-          <Link style={styles.link} to="/Link--Preview-App/article1">
+          <Link style={styles.link} to="/article1">
             Article 1
           </Link>
-          <Link style={styles.link} to="/Link--Preview-App/article2">
+          <Link style={styles.link} to="/article2">
             Article 2
           </Link>
-          <Link style={styles.link} to="/Link--Preview-App/article3">
+          <Link style={styles.link} to="/article3">
             Article 3
           </Link>
-          <Link style={styles.link} to="/Link--Preview-App/article4">
+          <Link style={styles.link} to="/article4">
             Article 4
           </Link>
-          <Link style={styles.link} to="/Link--Preview-App/article5">
+          <Link style={styles.link} to="/article5">
             Article 5
           </Link>
         </nav>
 
         <Routes>
-          <Route path="/Link--Preview-App" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route
-            path="/Link--Preview-App/article1"
+            path="/article1"
             element={
               <Article
-                title="Article 1"
-                imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6z9o-X7Ay_6TKelMmo_R1Ps6pbytlhs4n9Q&s/600x400"
-                description="This is the first article."
+                // title="Article 1"
+                // imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6z9o-X7Ay_6TKelMmo_R1Ps6pbytlhs4n9Q&s/600x400"
+                // description="This is the first article."
               />
             }
           />
-          <Route
-            path="/Link--Preview-App/article2"
+          {/* <Route
+            path="/article2"
             element={
               <Article
                 title="Article 2"
@@ -54,7 +54,7 @@ function App() {
             }
           />
           <Route
-            path="/Link--Preview-App/article3"
+            path="/article3"
             element={
               <Article
                 title="Article 3"
@@ -64,7 +64,7 @@ function App() {
             }
           />
           <Route
-            path="/Link--Preview-App/article4"
+            path="/article4"
             element={
               <Article
                 title="Article 4"
@@ -74,7 +74,7 @@ function App() {
             }
           />
           <Route
-            path="/Link--Preview-App/article5"
+            path="/article5"
             element={
               <Article
                 title="Article 5"
@@ -82,7 +82,7 @@ function App() {
                 description="This is the fifth article."
               />
             }
-          />
+          /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

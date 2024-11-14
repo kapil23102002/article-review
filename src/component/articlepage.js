@@ -6,24 +6,24 @@ const Article = ({ title, imageUrl, description }) => {
   return (
     <div style={styles.articleContainer}>
       <Helmet>
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>Article 1</title>
+        <meta name="description" content="This is the first article." />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={imageUrl} />
-        <meta property="og:url" content={window.location.href} />
+        <meta property="og:title" content="Article 1" />
+        <meta property="og:description" content="This is the first article." />
+        <meta property="og:image" content="%PUBLIC_URL%/img/sunflower.jpg" />
+        {/* <meta property="og:url" content={window.location.href} /> */}
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={imageUrl} />
+        <meta name="twitter:title" content="Article 1" />
+        <meta name="twitter:description" content="This is the first article." />
+        <meta name="twitter:image" content="%PUBLIC_URL%/img/sunflower.jpg" />
       </Helmet>
 
-      <h1 style={styles.title}>{title}</h1>
-      <img style={styles.image} src={imageUrl} alt={title} />
-      <p style={styles.description}>{description}</p>
+      <h1 style={styles.title}>"Article 1"</h1>
+      <img style={styles.image} src="%PUBLIC_URL%/img/sunflower.jpg" alt={"title"} />
+      <p style={styles.description}>"This is the first article."</p>
     </div>
   );
 };
